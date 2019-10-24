@@ -18,11 +18,13 @@ namespace Airports2.Services
         const string OutputFolderPath = @"\Output\";
         readonly Logger logger;
 
+        // TODO: instead of internal variables, it could be useful to use the properties of AirportContext
         static IDictionary<string, Country> countries;
         static IDictionary<UniqueCity, City> cities;
         static IList<Location> locations;
         static IDictionary<int, Airport> airports;
         static IDictionary<string, AirportTimeZoneInfo> timeZones;
+        AirportContext context;
         static string[] FileNames =
         {
             "airports.json",
@@ -47,6 +49,13 @@ namespace Airports2.Services
             locations = new List<Location>();
             airports = new Dictionary<int, Airport>();
             timeZones = new Dictionary<string, AirportTimeZoneInfo>();
+            context = new AirportContext
+            {
+                Airports = new List<Airport>(),
+                Cities = new List<City>(),
+                Countries = new List<Country>(),
+                Locations = new List<Location>()
+            };
         }
 
         private bool CheckDataAvailability()
@@ -91,15 +100,19 @@ namespace Airports2.Services
 
                 logger.Info($"There was {count} elements, wich not matched with the pattern.");
             }
-            AirportContext context = new AirportContext();
-            context.Airports = airports.Values;
-            context.Cities = cities.Values;
-            context.Countries = countries.Values;
-            context.Locations = locations;
+
+            LoadCSVs();
 
             SerializeObjects();
 
             return context;
+        }
+
+        private void LoadCSVs()
+        {
+            context.Airlines = (ICollection<Airline>)CsvHelper.Parse<Airline>(InputFolderPath + "airlines.dat");
+            context.Segments = (ICollection<Segment>)CsvHelper.Parse<Segment>(InputFolderPath + "segments.dat");
+            context.Flights = (ICollection<Flight>)CsvHelper.Parse<Flight>(InputFolderPath + "flights.dat");
         }
 
         private void CreateAirportModel(string line)
@@ -124,6 +137,7 @@ namespace Airports2.Services
                 ICAOCode = data[5].Trim('"')
             };
             airports.Add(airport.Id, airport);
+            context.Airports.Add(airport);
         }
 
         public string GenerateFullName(string name)
@@ -154,6 +168,7 @@ namespace Airports2.Services
                     Name = data[3].Trim('"')
                 };
                 countries.Add(newCountry.Name, newCountry);
+                context.Countries.Add(newCountry);
                 country = newCountry;
             }
 
@@ -175,6 +190,7 @@ namespace Airports2.Services
                 };
 
                 locations.Add(newLocation);
+                context.Locations.Add(newLocation);
                 location = newLocation;
             }
 
@@ -183,7 +199,7 @@ namespace Airports2.Services
 
         public City CreateCity(string[] data, Country country)
         {
-            var city = cities.SingleOrDefault(c => c.Key == new UniqueCity { CityName = data[2].Trim('"'), CountryName = country.Name }).Value; // c.Key == data[2].Trim('"') + "_" + country.Name
+            var city = cities.SingleOrDefault(c => c.Key == new UniqueCity { CityName = data[2].Trim('"'), CountryName = country.Name }).Value;
             if (city == null)
             {
                 var newCity = new City
@@ -195,6 +211,7 @@ namespace Airports2.Services
                 };
 
                 cities.Add(new UniqueCity { CityName = newCity.Name, CountryName = country.Name }, newCity);
+                context.Cities.Add(newCity);
                 city = newCity;
             }
 
@@ -259,6 +276,7 @@ namespace Airports2.Services
             context.Cities = JsonConvert.DeserializeObject<List<City>>(File.ReadAllText(InputFolderPath + OutputFolderPath + "cities.json")); // .ToDictionary(a => new UniqueCity { CityName = a.Name, CountryName = a.Country.Name }, a => a)
             context.Countries = JsonConvert.DeserializeObject<List<Country>>(File.ReadAllText(InputFolderPath + OutputFolderPath + "countries.json")); // .ToDictionary(a => a.Name, a => a)
             context.Locations = JsonConvert.DeserializeObject<List<Location>>(File.ReadAllText(InputFolderPath + OutputFolderPath + "locations.json"));
+            LoadCSVs();
             return context;
         }
 

@@ -10,5 +10,8 @@ namespace Airports2.Models
         public ICollection<City> Cities { get; set; }
         public ICollection<Country> Countries { get; set; }
         public ICollection<Location> Locations { get; set; }
+        public ICollection<Airline> Airlines { get; set; }
+        public ICollection<Segment> Segments { get; set; }
+        public ICollection<Flight> Flights { get; set; }
     }
 }

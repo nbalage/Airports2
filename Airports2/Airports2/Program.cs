@@ -20,6 +20,10 @@ namespace Airports2
             {
                 context = loader.ReadImportedFiles();
             }
+
+            //DataProcessor processor = new DataProcessor(context);
+            //Console.WriteLine(processor.CountCountries());
+            //Console.WriteLine(processor.MaxAirportNumberInOneCity());
         }
     }
 }

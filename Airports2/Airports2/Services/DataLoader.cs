@@ -18,11 +18,7 @@ namespace Airports2.Services
         const string OutputFolderPath = @"\Output\";
         readonly Logger logger;
 
-        // TODO: instead of internal variables, it could be useful to use the properties of AirportContext
-        static IDictionary<string, Country> countries;
-        static IDictionary<UniqueCity, City> cities;
-        static IList<Location> locations;
-        static IDictionary<int, Airport> airports;
+        static IDictionary<UniqueCity, City> cities; // it is necessary, because there are more cities in different countries, which have the same name
         static IDictionary<string, AirportTimeZoneInfo> timeZones;
         AirportContext context;
         static string[] FileNames =
@@ -44,10 +40,7 @@ namespace Airports2.Services
         public DataLoader()
         {
             logger = LogManager.GetCurrentClassLogger();
-            countries = new Dictionary<string, Country>();
             cities = new Dictionary<UniqueCity, City>();
-            locations = new List<Location>();
-            airports = new Dictionary<int, Airport>();
             timeZones = new Dictionary<string, AirportTimeZoneInfo>();
             context = new AirportContext
             {
@@ -136,7 +129,6 @@ namespace Airports2.Services
                 IATACode = data[4].Trim('"'),
                 ICAOCode = data[5].Trim('"')
             };
-            airports.Add(airport.Id, airport);
             context.Airports.Add(airport);
         }
 
@@ -159,15 +151,14 @@ namespace Airports2.Services
 
         public Country CreateCountry(string[] data)
         {
-            var country = countries.SingleOrDefault(c => c.Key == data[3].Trim('"')).Value;
+            var country = context.Countries.SingleOrDefault(c => c.Name == data[3].Trim('"'));
             if (country == null)
             {
                 var newCountry = new Country
                 {
-                    Id = countries.Count > 0 ? countries.Values.Max(c => c.Id) + 1 : 1,
+                    Id = context.Countries.Count > 0 ? context.Countries.Max(c => c.Id) + 1 : 1,
                     Name = data[3].Trim('"')
                 };
-                countries.Add(newCountry.Name, newCountry);
                 context.Countries.Add(newCountry);
                 country = newCountry;
             }
@@ -177,7 +168,7 @@ namespace Airports2.Services
 
         public Location CreateLocation(string[] data)
         {
-            var location = locations.SingleOrDefault(l => l.Longitude.ToString() == data[6]
+            var location = context.Locations.SingleOrDefault(l => l.Longitude.ToString() == data[6]
                                               && l.Latitude.ToString() == data[7]
                                               && l.Altitude.ToString() == data[8]);
             if (location == null)
@@ -189,7 +180,6 @@ namespace Airports2.Services
                     Altitude = decimal.Parse(data[8], CultureInfo.InvariantCulture)
                 };
 
-                locations.Add(newLocation);
                 context.Locations.Add(newLocation);
                 location = newLocation;
             }
@@ -228,7 +218,7 @@ namespace Airports2.Services
         {
             foreach (var zone in timeZones.Values)
             {
-                var airport = airports.SingleOrDefault(a => a.Key == zone.AirportId).Value;
+                var airport = context.Airports.SingleOrDefault(a => a.Id == zone.AirportId);
                 if (airport != null)
                 {
                     var city = cities.Single(c => c.Value.Id == airport.CityId).Value;
@@ -240,7 +230,7 @@ namespace Airports2.Services
 
         public void FindISOCodes()
         {
-            foreach (var airport in airports.Values)
+            foreach (var airport in context.Airports)
             {
                 var culture = CultureInfo.GetCultures(CultureTypes.SpecificCultures)
                                                             .FirstOrDefault(c => c.EnglishName.Contains(airport.Country.Name));
@@ -263,10 +253,10 @@ namespace Airports2.Services
 
         public void SerializeObjects()
         {
-            WriteObjectToFile(InputFolderPath + OutputFolderPath + @"airports.json", airports.Values);
+            WriteObjectToFile(InputFolderPath + OutputFolderPath + @"airports.json", context.Airports);
             WriteObjectToFile(InputFolderPath + OutputFolderPath + @"cities.json", cities.Values);
-            WriteObjectToFile(InputFolderPath + OutputFolderPath + @"countries.json", countries.Values);
-            WriteObjectToFile(InputFolderPath + OutputFolderPath + @"locations.json", locations);
+            WriteObjectToFile(InputFolderPath + OutputFolderPath + @"countries.json", context.Countries);
+            WriteObjectToFile(InputFolderPath + OutputFolderPath + @"locations.json", context.Locations);
         }
 
         public AirportContext ReadImportedFiles()

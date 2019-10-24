@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Airports2
+namespace Airports.Logic.Services
 {
     public static class StringExtensions
     {

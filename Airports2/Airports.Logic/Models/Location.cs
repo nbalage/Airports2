@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Airports2.Models
+namespace Airports.Logic.Models
 {
-    class Location
+    public class Location
     {
         public decimal Altitude { get; set; }
         public decimal Latitude { get; set; }

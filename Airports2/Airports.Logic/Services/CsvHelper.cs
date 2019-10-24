@@ -1,5 +1,4 @@
-﻿using Airports2.Models;
-using NLog;
+﻿using NLog;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -7,9 +6,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using System.Text;
 
-namespace Airports2
+namespace Airports.Logic.Services
 {
     public static class CsvHelper
     {

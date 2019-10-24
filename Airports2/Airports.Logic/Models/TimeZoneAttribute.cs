@@ -3,17 +3,19 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace Airports2
+namespace Airports.Logic.Models
 {
     [AttributeUsage(AttributeTargets.Property, AllowMultiple = false, Inherited = true)]
-    public class NotEmptyAttribute : ValidationAttribute
+    public class TimeZoneAttribute : ValidationAttribute
     {
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
-            if (value == null || string.IsNullOrEmpty(value.ToString()))
+            TimeSpan time;
+            if (!TimeSpan.TryParse(value.ToString(), out time))
             {
-                return new ValidationResult("Object could not be null!");
+                return new ValidationResult("Not a valid timespan format!");
             }
+
             return ValidationResult.Success;
         }
     }

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
-namespace Airports2.Models
+namespace Airports.Logic.Models
 {
-    class Airline
+    public class Airline
     {
         public string CallSign { get; set; }
         [Column("iata")]

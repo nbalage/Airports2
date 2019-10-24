@@ -1,5 +1,4 @@
-﻿using Airports2.Models;
-using Microsoft.Extensions.Configuration;
+﻿using Airports.Logic.Models;
 using Newtonsoft.Json;
 using NLog;
 using System;
@@ -7,14 +6,15 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace Airports2.Services
+namespace Airports.Logic.Services
 {
-    class DataLoader
+    public class DataLoader
     {
-        const string InputFolderPath = @"..\\..\\..\\Data\";
+        const string InputFolderPath = @"..\\..\\..\\..\\Data\";
         const string OutputFolderPath = @"\Output\";
         readonly Logger logger;
 
@@ -75,6 +75,7 @@ namespace Airports2.Services
         {
             var pattern = "^[0-9]{1,4},(\".*\",){3}(\"[A-Za-z]+\",){2}([-0-9]{1,4}(\\.[0-9]{0,})?,){2}";
 
+            var path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             using (var reader = new StreamReader(new FileStream(InputFolderPath + @"airports.dat", FileMode.Open)))
             {
                 string line;

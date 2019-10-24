@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Airports2.Models
+namespace Airports.Logic.Models
 {
-    class AirportTimeZoneInfo
+    public class AirportTimeZoneInfo
     {
         public int AirportId { get; set; }
         public string TimeZoneInfoId { get; set; }

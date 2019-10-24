@@ -1,9 +1,8 @@
-﻿using Airports2.Models;
-using Airports2.Services;
-using Microsoft.Extensions.Configuration;
-using System;
+﻿using System;
+using Airports.Logic.Models;
+using Airports.Logic.Services;
 
-namespace Airports2
+namespace Airports
 {
     class Program
     {

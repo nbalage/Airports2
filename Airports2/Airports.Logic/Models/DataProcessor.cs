@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 
-namespace Airports2.Models
+namespace Airports.Logic.Models
 {
-    class DataProcessor
+    public class DataProcessor
     {
         readonly AirportContext context;
 

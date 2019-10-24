@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Airports2.Models
+namespace Airports.Logic.Models
 {
-    class Airport
+    public class Airport
     {
         public int CityId { get; set; }
         public int CountryId { get; set; }

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Airports2.Models
+namespace Airports.Logic.Models
 {
-    class AirportContext
+    public class AirportContext
     {
         public ICollection<Airport> Airports { get; set; }
         public ICollection<City> Cities { get; set; }

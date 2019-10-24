@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
-namespace Airports2.Models
+namespace Airports.Logic.Models
 {
-    class Segment
+    public class Segment
     {
         public int Id { get; set; }
         public Airport DepartureAirport { get; set; }

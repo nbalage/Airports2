@@ -1,4 +1,5 @@
 ﻿using Airports.Logic.Models;
+using Airports.Logic.Services.Interfaces;
 using Newtonsoft.Json;
 using NLog;
 using System;
@@ -12,15 +13,14 @@ using System.Text.RegularExpressions;
 
 namespace Airports.Logic.Services
 {
-    public class DataLoader
+    public class DataLoader : IDataLoader
     {
         const string InputFolderPath = @"..\\..\\..\\..\\Data\";
         const string OutputFolderPath = @"\Output\";
         readonly Logger logger;
+        AirportContext context;
 
         static IDictionary<UniqueCity, City> cities; // it is necessary, because there are more cities in different countries, which have the same name
-        static IDictionary<string, AirportTimeZoneInfo> timeZones;
-        AirportContext context;
         static string[] FileNames =
         {
             "airports.json",
@@ -29,29 +29,7 @@ namespace Airports.Logic.Services
             "locations.json"
         };
 
-        public bool AreDataAvailable
-        {
-            get
-            {
-                return CheckDataAvailability();
-            }
-        }
-
-        public DataLoader()
-        {
-            logger = LogManager.GetCurrentClassLogger();
-            cities = new Dictionary<UniqueCity, City>();
-            timeZones = new Dictionary<string, AirportTimeZoneInfo>();
-            context = new AirportContext
-            {
-                Airports = new List<Airport>(),
-                Cities = new List<City>(),
-                Countries = new List<Country>(),
-                Locations = new List<Location>()
-            };
-        }
-
-        private bool CheckDataAvailability()
+        public bool AreDataAvailable()
         {
             if (!Directory.Exists(InputFolderPath + OutputFolderPath))
             {
@@ -66,9 +44,26 @@ namespace Airports.Logic.Services
                 {
                     filesExsist = false;
                 }
-            }
+}
 
             return filesExsist;
+        }
+
+        public DataLoader()
+        {
+            logger = LogManager.GetCurrentClassLogger();
+            cities = new Dictionary<UniqueCity, City>();
+            context = new AirportContext
+            {
+                Airports = new List<Airport>(),
+                Airlines = new List<Airline>(),
+                Cities = new List<City>(),
+                Countries = new List<Country>(),
+                Flights = new List<Flight>(),
+                Locations = new List<Location>(),
+                Segments = new List<Segment>(),
+                TimeZones = new List<AirportTimeZoneInfo>()
+            };
         }
 
         public AirportContext LoadData()
@@ -95,11 +90,28 @@ namespace Airports.Logic.Services
                 logger.Info($"There was {count} elements, wich not matched with the pattern.");
             }
 
-            LoadCSVs();
-
+            LoadConstantData();
             SerializeObjects();
 
             return context;
+        }
+
+        public AirportContext ReadImportedFiles()
+        {
+            context.Airports = JsonConvert.DeserializeObject<List<Airport>>(File.ReadAllText(InputFolderPath + OutputFolderPath + "airports.json"));
+            context.Cities = JsonConvert.DeserializeObject<List<City>>(File.ReadAllText(InputFolderPath + OutputFolderPath + "cities.json"));
+            context.Countries = JsonConvert.DeserializeObject<List<Country>>(File.ReadAllText(InputFolderPath + OutputFolderPath + "countries.json"));
+            context.Locations = JsonConvert.DeserializeObject<List<Location>>(File.ReadAllText(InputFolderPath + OutputFolderPath + "locations.json"));
+            LoadConstantData();
+            return context;
+        }
+
+        private void LoadConstantData()
+        {
+            LoadCSVs();
+            context.TimeZones = DeserializeTimeZones();
+            LoadTimeZoneNames();
+            FindISOCodes();
         }
 
         private void LoadCSVs()
@@ -133,7 +145,7 @@ namespace Airports.Logic.Services
             context.Airports.Add(airport);
         }
 
-        public string GenerateFullName(string name)
+        private string GenerateFullName(string name)
         {
             int airtportWordLength = 7;
             if (name.Length < airtportWordLength)
@@ -150,7 +162,7 @@ namespace Airports.Logic.Services
             }
         }
 
-        public Country CreateCountry(string[] data)
+        private Country CreateCountry(string[] data)
         {
             var country = context.Countries.SingleOrDefault(c => c.Name == data[3].Trim('"'));
             if (country == null)
@@ -167,7 +179,7 @@ namespace Airports.Logic.Services
             return country;
         }
 
-        public Location CreateLocation(string[] data)
+        private Location CreateLocation(string[] data)
         {
             var location = context.Locations.SingleOrDefault(l => l.Longitude.ToString() == data[6]
                                               && l.Latitude.ToString() == data[7]
@@ -188,7 +200,7 @@ namespace Airports.Logic.Services
             return location;
         }
 
-        public City CreateCity(string[] data, Country country)
+        private City CreateCity(string[] data, Country country)
         {
             var city = cities.SingleOrDefault(c => c.Key == new UniqueCity { CityName = data[2].Trim('"'), CountryName = country.Name }).Value;
             if (city == null)
@@ -209,20 +221,19 @@ namespace Airports.Logic.Services
             return city;
         }
 
-        public void DeserializeTimeZones()
+        public ICollection<AirportTimeZoneInfo> DeserializeTimeZones()
         {
-            timeZones = JsonConvert.DeserializeObject<List<AirportTimeZoneInfo>>(File.ReadAllText(InputFolderPath + @"timezoneinfo.json"))
-                        .ToDictionary(t => t.AirportId.ToString(), t => t);
+            return JsonConvert.DeserializeObject<List<AirportTimeZoneInfo>>(File.ReadAllText(InputFolderPath + @"timezoneinfo.json"));
         }
 
         public void LoadTimeZoneNames()
         {
-            foreach (var zone in timeZones.Values)
+            foreach (var zone in context.TimeZones)
             {
                 var airport = context.Airports.SingleOrDefault(a => a.Id == zone.AirportId);
                 if (airport != null)
                 {
-                    var city = cities.Single(c => c.Value.Id == airport.CityId).Value;
+                    var city = context.Cities.Single(c => c.Id == airport.CityId);
                     airport.TimeZoneName = zone.TimeZoneInfoId;
                     city.TimeZoneName = zone.TimeZoneInfoId;
                 }
@@ -234,15 +245,16 @@ namespace Airports.Logic.Services
             foreach (var airport in context.Airports)
             {
                 var culture = CultureInfo.GetCultures(CultureTypes.SpecificCultures)
-                                                            .FirstOrDefault(c => c.EnglishName.Contains(airport.Country.Name));
+                                         .FirstOrDefault(c => c.EnglishName.Contains(airport.Country.Name));
 
                 if (culture != null)
                 {
                     try
                     {
+                        var country = context.Countries.Single(a => a.Id == airport.CountryId);
                         var regInfo = new RegionInfo(culture.Name);
-                        airport.Country.TwoLetterISOCode = regInfo.TwoLetterISORegionName;
-                        airport.Country.ThreeLetterISOCode = regInfo.ThreeLetterISORegionName;
+                        country.TwoLetterISOCode = regInfo.TwoLetterISORegionName;
+                        country.ThreeLetterISOCode = regInfo.ThreeLetterISORegionName;
                     }
                     catch (Exception)
                     {
@@ -252,7 +264,7 @@ namespace Airports.Logic.Services
             }
         }
 
-        public void SerializeObjects()
+        private void SerializeObjects()
         {
             WriteObjectToFile(InputFolderPath + OutputFolderPath + @"airports.json", context.Airports);
             WriteObjectToFile(InputFolderPath + OutputFolderPath + @"cities.json", cities.Values);
@@ -260,24 +272,7 @@ namespace Airports.Logic.Services
             WriteObjectToFile(InputFolderPath + OutputFolderPath + @"locations.json", context.Locations);
         }
 
-        public AirportContext ReadImportedFiles()
-        {
-            AirportContext context = new AirportContext();
-            context.Airports = JsonConvert.DeserializeObject<List<Airport>>(File.ReadAllText(InputFolderPath + OutputFolderPath + "airports.json")); // .ToDictionary(a => a.Id, a => a)
-            context.Cities = JsonConvert.DeserializeObject<List<City>>(File.ReadAllText(InputFolderPath + OutputFolderPath + "cities.json")); // .ToDictionary(a => new UniqueCity { CityName = a.Name, CountryName = a.Country.Name }, a => a)
-            context.Countries = JsonConvert.DeserializeObject<List<Country>>(File.ReadAllText(InputFolderPath + OutputFolderPath + "countries.json")); // .ToDictionary(a => a.Name, a => a)
-            context.Locations = JsonConvert.DeserializeObject<List<Location>>(File.ReadAllText(InputFolderPath + OutputFolderPath + "locations.json"));
-            LoadCSVs();
-            return context;
-        }
-
-        public StreamReader OpenStreamReader(string path)
-        {
-            var stream = new FileStream(path, FileMode.Open);
-            return new StreamReader(stream);
-        }
-
-        public void WriteObjectToFile<T>(string path, IEnumerable<T> list) where T : class
+        private void WriteObjectToFile<T>(string path, IEnumerable<T> list) where T : class
         {
             var folderPath = path.Substring(0, path.LastIndexOf('\\'));
             if (!Directory.Exists(folderPath))

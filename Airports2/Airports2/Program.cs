@@ -1,6 +1,7 @@
 ﻿using System;
 using Airports.Logic.Models;
 using Airports.Logic.Services;
+using Airports.Logic.Services.Interfaces;
 
 namespace Airports
 {
@@ -10,8 +11,8 @@ namespace Airports
         {
             Console.WriteLine("Hello World!");
             AirportContext context;
-            DataLoader loader = new DataLoader();
-            if (!loader.AreDataAvailable)
+            IDataLoader loader = new DataLoader();
+            if (!loader.AreDataAvailable())
             {
                 context = loader.LoadData();
             }

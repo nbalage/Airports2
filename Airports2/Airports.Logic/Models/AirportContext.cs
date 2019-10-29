@@ -13,5 +13,6 @@ namespace Airports.Logic.Models
         public ICollection<Airline> Airlines { get; set; }
         public ICollection<Segment> Segments { get; set; }
         public ICollection<Flight> Flights { get; set; }
+        public ICollection<AirportTimeZoneInfo> TimeZones { get; set; }
     }
 }

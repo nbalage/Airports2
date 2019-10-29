@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Airports", "Airports2\Airpo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Airports.Logic", "Airports.Logic\Airports.Logic.csproj", "{DD62443D-C7D7-411F-B8A1-36796946E78B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Airports.Logic.Tests", "Airports.Logic.Tests\Airports.Logic.Tests.csproj", "{840F23B3-21AD-44C0-8BF8-86F8A831E234}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{DD62443D-C7D7-411F-B8A1-36796946E78B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD62443D-C7D7-411F-B8A1-36796946E78B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD62443D-C7D7-411F-B8A1-36796946E78B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{840F23B3-21AD-44C0-8BF8-86F8A831E234}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{840F23B3-21AD-44C0-8BF8-86F8A831E234}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{840F23B3-21AD-44C0-8BF8-86F8A831E234}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{840F23B3-21AD-44C0-8BF8-86F8A831E234}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

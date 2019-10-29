@@ -29,48 +29,26 @@ namespace Airports.Logic.Services
             "locations.json"
         };
 
-        public bool AreDataAvailable()
-        {
-            if (!Directory.Exists(InputFolderPath + OutputFolderPath))
-            {
-                return false;
-            }
-
-            bool filesExsist = true;
-
-            foreach (var path in FileNames)
-            {
-                if (!File.Exists(InputFolderPath + OutputFolderPath + path))
-                {
-                    filesExsist = false;
-                }
-}
-
-            return filesExsist;
-        }
-
         public DataLoader()
         {
             logger = LogManager.GetCurrentClassLogger();
             cities = new Dictionary<UniqueCity, City>();
-            context = new AirportContext
+            ClearContext();
+        }
+
+        public bool AreDataAvailable
+        {
+            get
             {
-                Airports = new List<Airport>(),
-                Airlines = new List<Airline>(),
-                Cities = new List<City>(),
-                Countries = new List<Country>(),
-                Flights = new List<Flight>(),
-                Locations = new List<Location>(),
-                Segments = new List<Segment>(),
-                TimeZones = new List<AirportTimeZoneInfo>()
-            };
+                return GetDataAvailability();
+            }
         }
 
         public AirportContext LoadData()
         {
+            ClearContext();
             var pattern = "^[0-9]{1,4},(\".*\",){3}(\"[A-Za-z]+\",){2}([-0-9]{1,4}(\\.[0-9]{0,})?,){2}";
 
-            var path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             using (var reader = new StreamReader(new FileStream(InputFolderPath + @"airports.dat", FileMode.Open)))
             {
                 string line;
@@ -98,12 +76,61 @@ namespace Airports.Logic.Services
 
         public AirportContext ReadImportedFiles()
         {
-            context.Airports = JsonConvert.DeserializeObject<List<Airport>>(File.ReadAllText(InputFolderPath + OutputFolderPath + "airports.json"));
-            context.Cities = JsonConvert.DeserializeObject<List<City>>(File.ReadAllText(InputFolderPath + OutputFolderPath + "cities.json"));
-            context.Countries = JsonConvert.DeserializeObject<List<Country>>(File.ReadAllText(InputFolderPath + OutputFolderPath + "countries.json"));
-            context.Locations = JsonConvert.DeserializeObject<List<Location>>(File.ReadAllText(InputFolderPath + OutputFolderPath + "locations.json"));
-            LoadConstantData();
-            return context;
+            if (AreDataAvailable)
+            {
+                ClearContext();
+
+                context.Airports = JsonConvert.DeserializeObject<List<Airport>>(File.ReadAllText(InputFolderPath + OutputFolderPath + "airports.json"));
+                context.Cities = JsonConvert.DeserializeObject<List<City>>(File.ReadAllText(InputFolderPath + OutputFolderPath + "cities.json"));
+                context.Countries = JsonConvert.DeserializeObject<List<Country>>(File.ReadAllText(InputFolderPath + OutputFolderPath + "countries.json"));
+                context.Locations = JsonConvert.DeserializeObject<List<Location>>(File.ReadAllText(InputFolderPath + OutputFolderPath + "locations.json"));
+                LoadConstantData();
+                return context;
+            }
+            return new AirportContext();
+        }
+
+        private void ClearContext()
+        {
+            context = new AirportContext
+            {
+                Airports = new List<Airport>(),
+                Airlines = new List<Airline>(),
+                Cities = new List<City>(),
+                Countries = new List<Country>(),
+                Flights = new List<Flight>(),
+                Locations = new List<Location>(),
+                Segments = new List<Segment>(),
+                TimeZones = new List<AirportTimeZoneInfo>()
+            };
+        }
+
+        private bool GetDataAvailability()
+        {
+            try
+            {
+                if (!Directory.Exists(InputFolderPath + OutputFolderPath))
+                {
+                    return false;
+                }
+
+                bool filesExsist = true;
+
+                foreach (var path in FileNames)
+                {
+                    if (!File.Exists(InputFolderPath + OutputFolderPath + path))
+                    {
+                        filesExsist = false;
+                    }
+                }
+
+                return filesExsist;
+            }
+            catch (DirectoryNotFoundException ex)
+            {
+                logger.Error(ex);
+                return false;
+            }
         }
 
         private void LoadConstantData()

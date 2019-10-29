@@ -7,7 +7,7 @@ namespace Airports.Logic.Services.Interfaces
 {
     public interface IDataLoader
     {
-        bool AreDataAvailable();
+        public bool AreDataAvailable { get; }
         AirportContext LoadData();
         AirportContext ReadImportedFiles();
     }

@@ -2,50 +2,50 @@
   {
     "Id": 1,
     "Name": "Papua New Guinea",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "PNG",
+    "TwoLetterISOCode": "PG"
   },
   {
     "Id": 2,
     "Name": "Greenland",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "GRL",
+    "TwoLetterISOCode": "GL"
   },
   {
     "Id": 3,
     "Name": "Iceland",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "ISL",
+    "TwoLetterISOCode": "IS"
   },
   {
     "Id": 4,
     "Name": "Canada",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "CAN",
+    "TwoLetterISOCode": "CA"
   },
   {
     "Id": 5,
     "Name": "Algeria",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "DZA",
+    "TwoLetterISOCode": "DZ"
   },
   {
     "Id": 6,
     "Name": "Benin",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "BEN",
+    "TwoLetterISOCode": "BJ"
   },
   {
     "Id": 7,
     "Name": "Burkina Faso",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "BFA",
+    "TwoLetterISOCode": "BF"
   },
   {
     "Id": 8,
     "Name": "Ghana",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "GHA",
+    "TwoLetterISOCode": "GH"
   },
   {
     "Id": 9,
@@ -56,140 +56,140 @@
   {
     "Id": 10,
     "Name": "Nigeria",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "NGA",
+    "TwoLetterISOCode": "NG"
   },
   {
     "Id": 11,
     "Name": "Niger",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "NGA",
+    "TwoLetterISOCode": "NG"
   },
   {
     "Id": 12,
     "Name": "Tunisia",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "TUN",
+    "TwoLetterISOCode": "TN"
   },
   {
     "Id": 13,
     "Name": "Togo",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "TGO",
+    "TwoLetterISOCode": "TG"
   },
   {
     "Id": 14,
     "Name": "Belgium",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "BEL",
+    "TwoLetterISOCode": "BE"
   },
   {
     "Id": 15,
     "Name": "Germany",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "DEU",
+    "TwoLetterISOCode": "DE"
   },
   {
     "Id": 16,
     "Name": "Estonia",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "EST",
+    "TwoLetterISOCode": "EE"
   },
   {
     "Id": 17,
     "Name": "Finland",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "FIN",
+    "TwoLetterISOCode": "FI"
   },
   {
     "Id": 18,
     "Name": "United Kingdom",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "GBR",
+    "TwoLetterISOCode": "GB"
   },
   {
     "Id": 19,
     "Name": "Guernsey",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "GGY",
+    "TwoLetterISOCode": "GG"
   },
   {
     "Id": 20,
     "Name": "Jersey",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "JEY",
+    "TwoLetterISOCode": "JE"
   },
   {
     "Id": 21,
     "Name": "Isle of Man",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "IMN",
+    "TwoLetterISOCode": "IM"
   },
   {
     "Id": 22,
     "Name": "Falkland Islands",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "FLK",
+    "TwoLetterISOCode": "FK"
   },
   {
     "Id": 23,
     "Name": "Netherlands",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "NLD",
+    "TwoLetterISOCode": "NL"
   },
   {
     "Id": 24,
     "Name": "Ireland",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "IRL",
+    "TwoLetterISOCode": "IE"
   },
   {
     "Id": 25,
     "Name": "Denmark",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "DNK",
+    "TwoLetterISOCode": "DK"
   },
   {
     "Id": 26,
     "Name": "Faroe Islands",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "FRO",
+    "TwoLetterISOCode": "FO"
   },
   {
     "Id": 27,
     "Name": "Luxembourg",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "LUX",
+    "TwoLetterISOCode": "LU"
   },
   {
     "Id": 28,
     "Name": "Norway",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "NOR",
+    "TwoLetterISOCode": "NO"
   },
   {
     "Id": 29,
     "Name": "Poland",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "POL",
+    "TwoLetterISOCode": "PL"
   },
   {
     "Id": 30,
     "Name": "Sweden",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "SWE",
+    "TwoLetterISOCode": "SE"
   },
   {
     "Id": 31,
     "Name": "South Africa",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "ZAF",
+    "TwoLetterISOCode": "ZA"
   },
   {
     "Id": 32,
     "Name": "Botswana",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "BWA",
+    "TwoLetterISOCode": "BW"
   },
   {
     "Id": 33,
@@ -206,50 +206,50 @@
   {
     "Id": 35,
     "Name": "Swaziland",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "SWZ",
+    "TwoLetterISOCode": "SZ"
   },
   {
     "Id": 36,
     "Name": "Central African Republic",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "CAF",
+    "TwoLetterISOCode": "CF"
   },
   {
     "Id": 37,
     "Name": "Equatorial Guinea",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "GNQ",
+    "TwoLetterISOCode": "GQ"
   },
   {
     "Id": 38,
     "Name": "Mauritius",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "MUS",
+    "TwoLetterISOCode": "MU"
   },
   {
     "Id": 39,
     "Name": "Cameroon",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "CMR",
+    "TwoLetterISOCode": "CM"
   },
   {
     "Id": 40,
     "Name": "Zambia",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "ZMB",
+    "TwoLetterISOCode": "ZM"
   },
   {
     "Id": 41,
     "Name": "Comoros",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "COM",
+    "TwoLetterISOCode": "KM"
   },
   {
     "Id": 42,
     "Name": "Mayotte",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "MYT",
+    "TwoLetterISOCode": "YT"
   },
   {
     "Id": 43,
@@ -260,26 +260,26 @@
   {
     "Id": 44,
     "Name": "Madagascar",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "MDG",
+    "TwoLetterISOCode": "MG"
   },
   {
     "Id": 45,
     "Name": "Angola",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "AGO",
+    "TwoLetterISOCode": "AO"
   },
   {
     "Id": 46,
     "Name": "Puerto Rico",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "PRI",
+    "TwoLetterISOCode": "PR"
   },
   {
     "Id": 47,
     "Name": "Gabon",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "GAB",
+    "TwoLetterISOCode": "GA"
   },
   {
     "Id": 48,
@@ -290,92 +290,92 @@
   {
     "Id": 49,
     "Name": "Mozambique",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "MOZ",
+    "TwoLetterISOCode": "MZ"
   },
   {
     "Id": 50,
     "Name": "Seychelles",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "SYC",
+    "TwoLetterISOCode": "SC"
   },
   {
     "Id": 51,
     "Name": "Chad",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "TCD",
+    "TwoLetterISOCode": "TD"
   },
   {
     "Id": 52,
     "Name": "Zimbabwe",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "ZWE",
+    "TwoLetterISOCode": "ZW"
   },
   {
     "Id": 53,
     "Name": "Malawi",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "MWI",
+    "TwoLetterISOCode": "MW"
   },
   {
     "Id": 54,
     "Name": "Lesotho",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "LSO",
+    "TwoLetterISOCode": "LS"
   },
   {
     "Id": 55,
     "Name": "Mali",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "MLI",
+    "TwoLetterISOCode": "ML"
   },
   {
     "Id": 56,
     "Name": "Gambia",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "GMB",
+    "TwoLetterISOCode": "GM"
   },
   {
     "Id": 57,
     "Name": "Spain",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "ESP",
+    "TwoLetterISOCode": "ES"
   },
   {
     "Id": 58,
     "Name": "Sierra Leone",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "SLE",
+    "TwoLetterISOCode": "SL"
   },
   {
     "Id": 59,
     "Name": "Liberia",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "LBR",
+    "TwoLetterISOCode": "LR"
   },
   {
     "Id": 60,
     "Name": "Morocco",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "MAR",
+    "TwoLetterISOCode": "MA"
   },
   {
     "Id": 61,
     "Name": "Senegal",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "SEN",
+    "TwoLetterISOCode": "SN"
   },
   {
     "Id": 62,
     "Name": "Mauritania",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "MRT",
+    "TwoLetterISOCode": "MR"
   },
   {
     "Id": 63,
     "Name": "Guinea",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "PNG",
+    "TwoLetterISOCode": "PG"
   },
   {
     "Id": 64,
@@ -386,128 +386,128 @@
   {
     "Id": 65,
     "Name": "Ethiopia",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "ETH",
+    "TwoLetterISOCode": "ET"
   },
   {
     "Id": 66,
     "Name": "Burundi",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "BDI",
+    "TwoLetterISOCode": "BI"
   },
   {
     "Id": 67,
     "Name": "Somalia",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "SOM",
+    "TwoLetterISOCode": "SO"
   },
   {
     "Id": 68,
     "Name": "Egypt",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "EGY",
+    "TwoLetterISOCode": "EG"
   },
   {
     "Id": 69,
     "Name": "Kenya",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "KEN",
+    "TwoLetterISOCode": "KE"
   },
   {
     "Id": 70,
     "Name": "Libya",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "LBY",
+    "TwoLetterISOCode": "LY"
   },
   {
     "Id": 71,
     "Name": "Rwanda",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "RWA",
+    "TwoLetterISOCode": "RW"
   },
   {
     "Id": 72,
     "Name": "Sudan",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "SDN",
+    "TwoLetterISOCode": "SD"
   },
   {
     "Id": 73,
     "Name": "South Sudan",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "SSD",
+    "TwoLetterISOCode": "SS"
   },
   {
     "Id": 74,
     "Name": "Tanzania",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "TZA",
+    "TwoLetterISOCode": "TZ"
   },
   {
     "Id": 75,
     "Name": "Uganda",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "UGA",
+    "TwoLetterISOCode": "UG"
   },
   {
     "Id": 76,
     "Name": "Albania",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "ALB",
+    "TwoLetterISOCode": "AL"
   },
   {
     "Id": 77,
     "Name": "Bulgaria",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "BGR",
+    "TwoLetterISOCode": "BG"
   },
   {
     "Id": 78,
     "Name": "Cyprus",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "CYP",
+    "TwoLetterISOCode": "CY"
   },
   {
     "Id": 79,
     "Name": "Croatia",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "BIH",
+    "TwoLetterISOCode": "BA"
   },
   {
     "Id": 80,
     "Name": "Greece",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "GRC",
+    "TwoLetterISOCode": "GR"
   },
   {
     "Id": 81,
     "Name": "France",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "FRA",
+    "TwoLetterISOCode": "FR"
   },
   {
     "Id": 82,
     "Name": "Saint Pierre and Miquelon",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "SPM",
+    "TwoLetterISOCode": "PM"
   },
   {
     "Id": 83,
     "Name": "Hungary",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "HUN",
+    "TwoLetterISOCode": "HU"
   },
   {
     "Id": 84,
     "Name": "Italy",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "ITA",
+    "TwoLetterISOCode": "IT"
   },
   {
     "Id": 85,
     "Name": "Slovenia",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "SVN",
+    "TwoLetterISOCode": "SI"
   },
   {
     "Id": 86,
@@ -518,350 +518,350 @@
   {
     "Id": 87,
     "Name": "Israel",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "ISR",
+    "TwoLetterISOCode": "IL"
   },
   {
     "Id": 88,
     "Name": "Malta",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "MLT",
+    "TwoLetterISOCode": "MT"
   },
   {
     "Id": 89,
     "Name": "Austria",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "AUT",
+    "TwoLetterISOCode": "AT"
   },
   {
     "Id": 90,
     "Name": "Portugal",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "PRT",
+    "TwoLetterISOCode": "PT"
   },
   {
     "Id": 91,
     "Name": "United States",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "USA",
+    "TwoLetterISOCode": "US"
   },
   {
     "Id": 92,
     "Name": "Bosnia and Herzegovina",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "BIH",
+    "TwoLetterISOCode": "BA"
   },
   {
     "Id": 93,
     "Name": "Romania",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "MDA",
+    "TwoLetterISOCode": "MD"
   },
   {
     "Id": 94,
     "Name": "Switzerland",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "CHE",
+    "TwoLetterISOCode": "CH"
   },
   {
     "Id": 95,
     "Name": "Turkey",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "TUR",
+    "TwoLetterISOCode": "TR"
   },
   {
     "Id": 96,
     "Name": "Moldova",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "MDA",
+    "TwoLetterISOCode": "MD"
   },
   {
     "Id": 97,
     "Name": "Macedonia",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "MKD",
+    "TwoLetterISOCode": "MK"
   },
   {
     "Id": 98,
     "Name": "Gibraltar",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "GIB",
+    "TwoLetterISOCode": "GI"
   },
   {
     "Id": 99,
     "Name": "Serbia",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "BIH",
+    "TwoLetterISOCode": "BA"
   },
   {
     "Id": 100,
     "Name": "Montenegro",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "MNE",
+    "TwoLetterISOCode": "ME"
   },
   {
     "Id": 101,
     "Name": "Slovakia",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "SVK",
+    "TwoLetterISOCode": "SK"
   },
   {
     "Id": 102,
     "Name": "Turks and Caicos Islands",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "TCA",
+    "TwoLetterISOCode": "TC"
   },
   {
     "Id": 103,
     "Name": "Dominican Republic",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "DOM",
+    "TwoLetterISOCode": "DO"
   },
   {
     "Id": 104,
     "Name": "Guatemala",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "GTM",
+    "TwoLetterISOCode": "GT"
   },
   {
     "Id": 105,
     "Name": "Honduras",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "HND",
+    "TwoLetterISOCode": "HN"
   },
   {
     "Id": 106,
     "Name": "Jamaica",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "JAM",
+    "TwoLetterISOCode": "JM"
   },
   {
     "Id": 107,
     "Name": "Mexico",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "MEX",
+    "TwoLetterISOCode": "MX"
   },
   {
     "Id": 108,
     "Name": "Nicaragua",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "NIC",
+    "TwoLetterISOCode": "NI"
   },
   {
     "Id": 109,
     "Name": "Panama",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "PAN",
+    "TwoLetterISOCode": "PA"
   },
   {
     "Id": 110,
     "Name": "Costa Rica",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "CRI",
+    "TwoLetterISOCode": "CR"
   },
   {
     "Id": 111,
     "Name": "El Salvador",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "SLV",
+    "TwoLetterISOCode": "SV"
   },
   {
     "Id": 112,
     "Name": "Haiti",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "HTI",
+    "TwoLetterISOCode": "HT"
   },
   {
     "Id": 113,
     "Name": "Cuba",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "CUB",
+    "TwoLetterISOCode": "CU"
   },
   {
     "Id": 114,
     "Name": "Cayman Islands",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "CYM",
+    "TwoLetterISOCode": "KY"
   },
   {
     "Id": 115,
     "Name": "Bahamas",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "BHS",
+    "TwoLetterISOCode": "BS"
   },
   {
     "Id": 116,
     "Name": "Belize",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "BLZ",
+    "TwoLetterISOCode": "BZ"
   },
   {
     "Id": 117,
     "Name": "Cook Islands",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "COK",
+    "TwoLetterISOCode": "CK"
   },
   {
     "Id": 118,
     "Name": "Fiji",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "FJI",
+    "TwoLetterISOCode": "FJ"
   },
   {
     "Id": 119,
     "Name": "Tonga",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "TON",
+    "TwoLetterISOCode": "TO"
   },
   {
     "Id": 120,
     "Name": "Kiribati",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "KIR",
+    "TwoLetterISOCode": "KI"
   },
   {
     "Id": 121,
     "Name": "Australia",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "AUS",
+    "TwoLetterISOCode": "AU"
   },
   {
     "Id": 122,
     "Name": "Wallis and Futuna",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "WLF",
+    "TwoLetterISOCode": "WF"
   },
   {
     "Id": 123,
     "Name": "Samoa",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "ASM",
+    "TwoLetterISOCode": "AS"
   },
   {
     "Id": 124,
     "Name": "American Samoa",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "ASM",
+    "TwoLetterISOCode": "AS"
   },
   {
     "Id": 125,
     "Name": "French Polynesia",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "PYF",
+    "TwoLetterISOCode": "PF"
   },
   {
     "Id": 126,
     "Name": "Vanuatu",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "VUT",
+    "TwoLetterISOCode": "VU"
   },
   {
     "Id": 127,
     "Name": "New Caledonia",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "NCL",
+    "TwoLetterISOCode": "NC"
   },
   {
     "Id": 128,
     "Name": "New Zealand",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "NZL",
+    "TwoLetterISOCode": "NZ"
   },
   {
     "Id": 129,
     "Name": "Afghanistan",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "AFG",
+    "TwoLetterISOCode": "AF"
   },
   {
     "Id": 130,
     "Name": "Bahrain",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "BHR",
+    "TwoLetterISOCode": "BH"
   },
   {
     "Id": 131,
     "Name": "Saudi Arabia",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "SAU",
+    "TwoLetterISOCode": "SA"
   },
   {
     "Id": 132,
     "Name": "Iran",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "IRN",
+    "TwoLetterISOCode": "IR"
   },
   {
     "Id": 133,
     "Name": "Jordan",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "JOR",
+    "TwoLetterISOCode": "JO"
   },
   {
     "Id": 134,
     "Name": "Kuwait",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "KWT",
+    "TwoLetterISOCode": "KW"
   },
   {
     "Id": 135,
     "Name": "Lebanon",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "LBN",
+    "TwoLetterISOCode": "LB"
   },
   {
     "Id": 136,
     "Name": "United Arab Emirates",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "ARE",
+    "TwoLetterISOCode": "AE"
   },
   {
     "Id": 137,
     "Name": "Oman",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "OMN",
+    "TwoLetterISOCode": "OM"
   },
   {
     "Id": 138,
     "Name": "Pakistan",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "PAK",
+    "TwoLetterISOCode": "PK"
   },
   {
     "Id": 139,
     "Name": "Iraq",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "IRQ",
+    "TwoLetterISOCode": "IQ"
   },
   {
     "Id": 140,
     "Name": "Syria",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "SYR",
+    "TwoLetterISOCode": "SY"
   },
   {
     "Id": 141,
     "Name": "Qatar",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "QAT",
+    "TwoLetterISOCode": "QA"
   },
   {
     "Id": 142,
     "Name": "Northern Mariana Islands",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "MNP",
+    "TwoLetterISOCode": "MP"
   },
   {
     "Id": 143,
     "Name": "Guam",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "GUM",
+    "TwoLetterISOCode": "GU"
   },
   {
     "Id": 144,
     "Name": "Marshall Islands",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "MHL",
+    "TwoLetterISOCode": "MH"
   },
   {
     "Id": 145,
@@ -872,26 +872,26 @@
   {
     "Id": 146,
     "Name": "Micronesia",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "FSM",
+    "TwoLetterISOCode": "FM"
   },
   {
     "Id": 147,
     "Name": "Palau",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "PLW",
+    "TwoLetterISOCode": "PW"
   },
   {
     "Id": 148,
     "Name": "Taiwan",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "TWN",
+    "TwoLetterISOCode": "TW"
   },
   {
     "Id": 149,
     "Name": "Japan",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "JPN",
+    "TwoLetterISOCode": "JP"
   },
   {
     "Id": 150,
@@ -902,152 +902,152 @@
   {
     "Id": 151,
     "Name": "Philippines",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "PHL",
+    "TwoLetterISOCode": "PH"
   },
   {
     "Id": 152,
     "Name": "Turkmenistan",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "TKM",
+    "TwoLetterISOCode": "TM"
   },
   {
     "Id": 153,
     "Name": "Argentina",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "ARG",
+    "TwoLetterISOCode": "AR"
   },
   {
     "Id": 154,
     "Name": "Brazil",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "BRA",
+    "TwoLetterISOCode": "BR"
   },
   {
     "Id": 155,
     "Name": "Chile",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "CHL",
+    "TwoLetterISOCode": "CL"
   },
   {
     "Id": 156,
     "Name": "Ecuador",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "ECU",
+    "TwoLetterISOCode": "EC"
   },
   {
     "Id": 157,
     "Name": "Paraguay",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "PRY",
+    "TwoLetterISOCode": "PY"
   },
   {
     "Id": 158,
     "Name": "Colombia",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "COL",
+    "TwoLetterISOCode": "CO"
   },
   {
     "Id": 159,
     "Name": "Bolivia",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "BOL",
+    "TwoLetterISOCode": "BO"
   },
   {
     "Id": 160,
     "Name": "Suriname",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "SUR",
+    "TwoLetterISOCode": "SR"
   },
   {
     "Id": 161,
     "Name": "French Guiana",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "GUF",
+    "TwoLetterISOCode": "GF"
   },
   {
     "Id": 162,
     "Name": "Peru",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "PER",
+    "TwoLetterISOCode": "PE"
   },
   {
     "Id": 163,
     "Name": "Uruguay",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "URY",
+    "TwoLetterISOCode": "UY"
   },
   {
     "Id": 164,
     "Name": "Venezuela",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "VEN",
+    "TwoLetterISOCode": "VE"
   },
   {
     "Id": 165,
     "Name": "Guyana",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "GUY",
+    "TwoLetterISOCode": "GY"
   },
   {
     "Id": 166,
     "Name": "Antigua and Barbuda",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "ATG",
+    "TwoLetterISOCode": "AG"
   },
   {
     "Id": 167,
     "Name": "Barbados",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "BRB",
+    "TwoLetterISOCode": "BB"
   },
   {
     "Id": 168,
     "Name": "Dominica",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "DMA",
+    "TwoLetterISOCode": "DM"
   },
   {
     "Id": 169,
     "Name": "Martinique",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "MTQ",
+    "TwoLetterISOCode": "MQ"
   },
   {
     "Id": 170,
     "Name": "Guadeloupe",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "GLP",
+    "TwoLetterISOCode": "GP"
   },
   {
     "Id": 171,
     "Name": "Grenada",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "GRD",
+    "TwoLetterISOCode": "GD"
   },
   {
     "Id": 172,
     "Name": "Virgin Islands",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "VGB",
+    "TwoLetterISOCode": "VG"
   },
   {
     "Id": 173,
     "Name": "Saint Kitts and Nevis",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "KNA",
+    "TwoLetterISOCode": "KN"
   },
   {
     "Id": 174,
     "Name": "Saint Lucia",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "LCA",
+    "TwoLetterISOCode": "LC"
   },
   {
     "Id": 175,
     "Name": "Aruba",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "ABW",
+    "TwoLetterISOCode": "AW"
   },
   {
     "Id": 176,
@@ -1058,110 +1058,110 @@
   {
     "Id": 177,
     "Name": "Anguilla",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "AIA",
+    "TwoLetterISOCode": "AI"
   },
   {
     "Id": 178,
     "Name": "Trinidad and Tobago",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "TTO",
+    "TwoLetterISOCode": "TT"
   },
   {
     "Id": 179,
     "Name": "British Virgin Islands",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "VGB",
+    "TwoLetterISOCode": "VG"
   },
   {
     "Id": 180,
     "Name": "Saint Vincent and the Grenadines",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "VCT",
+    "TwoLetterISOCode": "VC"
   },
   {
     "Id": 181,
     "Name": "Kazakhstan",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "KAZ",
+    "TwoLetterISOCode": "KZ"
   },
   {
     "Id": 182,
     "Name": "Kyrgyzstan",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "KGZ",
+    "TwoLetterISOCode": "KG"
   },
   {
     "Id": 183,
     "Name": "Azerbaijan",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "AZE",
+    "TwoLetterISOCode": "AZ"
   },
   {
     "Id": 184,
     "Name": "Russia",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "RUS",
+    "TwoLetterISOCode": "RU"
   },
   {
     "Id": 185,
     "Name": "Ukraine",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "UKR",
+    "TwoLetterISOCode": "UA"
   },
   {
     "Id": 186,
     "Name": "Belarus",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "BLR",
+    "TwoLetterISOCode": "BY"
   },
   {
     "Id": 187,
     "Name": "Tajikistan",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "TJK",
+    "TwoLetterISOCode": "TJ"
   },
   {
     "Id": 188,
     "Name": "Uzbekistan",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "UZB",
+    "TwoLetterISOCode": "UZ"
   },
   {
     "Id": 189,
     "Name": "India",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "IND",
+    "TwoLetterISOCode": "IN"
   },
   {
     "Id": 190,
     "Name": "Sri Lanka",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "LKA",
+    "TwoLetterISOCode": "LK"
   },
   {
     "Id": 191,
     "Name": "Cambodia",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "KHM",
+    "TwoLetterISOCode": "KH"
   },
   {
     "Id": 192,
     "Name": "Bangladesh",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "BGD",
+    "TwoLetterISOCode": "BD"
   },
   {
     "Id": 193,
     "Name": "Hong Kong",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "HKG",
+    "TwoLetterISOCode": "HK"
   },
   {
     "Id": 194,
     "Name": "Laos",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "LAO",
+    "TwoLetterISOCode": "LA"
   },
   {
     "Id": 195,
@@ -1172,38 +1172,38 @@
   {
     "Id": 196,
     "Name": "Nepal",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "IND",
+    "TwoLetterISOCode": "IN"
   },
   {
     "Id": 197,
     "Name": "Bhutan",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "BTN",
+    "TwoLetterISOCode": "BT"
   },
   {
     "Id": 198,
     "Name": "Maldives",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "MDV",
+    "TwoLetterISOCode": "MV"
   },
   {
     "Id": 199,
     "Name": "Thailand",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "THA",
+    "TwoLetterISOCode": "TH"
   },
   {
     "Id": 200,
     "Name": "Indonesia",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "IDN",
+    "TwoLetterISOCode": "ID"
   },
   {
     "Id": 201,
     "Name": "Vietnam",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "VNM",
+    "TwoLetterISOCode": "VN"
   },
   {
     "Id": 202,
@@ -1214,14 +1214,14 @@
   {
     "Id": 203,
     "Name": "Malaysia",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "MYS",
+    "TwoLetterISOCode": "MY"
   },
   {
     "Id": 204,
     "Name": "Brunei",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "BRN",
+    "TwoLetterISOCode": "BN"
   },
   {
     "Id": 205,
@@ -1232,62 +1232,62 @@
   {
     "Id": 206,
     "Name": "Singapore",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "SGP",
+    "TwoLetterISOCode": "SG"
   },
   {
     "Id": 207,
     "Name": "Christmas Island",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "CXR",
+    "TwoLetterISOCode": "CX"
   },
   {
     "Id": 208,
     "Name": "Norfolk Island",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "NFK",
+    "TwoLetterISOCode": "NF"
   },
   {
     "Id": 209,
     "Name": "China",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "CHN",
+    "TwoLetterISOCode": "CN"
   },
   {
     "Id": 210,
     "Name": "Korea",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "PRK",
+    "TwoLetterISOCode": "KP"
   },
   {
     "Id": 211,
     "Name": "Mongolia",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "MNG",
+    "TwoLetterISOCode": "MN"
   },
   {
     "Id": 212,
     "Name": "Latvia",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "LVA",
+    "TwoLetterISOCode": "LV"
   },
   {
     "Id": 213,
     "Name": "Lithuania",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "LTU",
+    "TwoLetterISOCode": "LT"
   },
   {
     "Id": 214,
     "Name": "Armenia",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "ARM",
+    "TwoLetterISOCode": "AM"
   },
   {
     "Id": 215,
     "Name": "Eritrea",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "ERI",
+    "TwoLetterISOCode": "ER"
   },
   {
     "Id": 216,
@@ -1298,56 +1298,56 @@
   {
     "Id": 217,
     "Name": "Yemen",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "YEM",
+    "TwoLetterISOCode": "YE"
   },
   {
     "Id": 218,
     "Name": "Georgia",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "GEO",
+    "TwoLetterISOCode": "GE"
   },
   {
     "Id": 219,
     "Name": "Bermuda",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "BMU",
+    "TwoLetterISOCode": "BM"
   },
   {
     "Id": 220,
     "Name": "Solomon Islands",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "SLB",
+    "TwoLetterISOCode": "SB"
   },
   {
     "Id": 221,
     "Name": "Nauru",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "NRU",
+    "TwoLetterISOCode": "NR"
   },
   {
     "Id": 222,
     "Name": "Tuvalu",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "TUV",
+    "TwoLetterISOCode": "TV"
   },
   {
     "Id": 223,
     "Name": "Namibia",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "NAM",
+    "TwoLetterISOCode": "NA"
   },
   {
     "Id": 224,
     "Name": "Djibouti",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "DJI",
+    "TwoLetterISOCode": "DJ"
   },
   {
     "Id": 225,
     "Name": "Montserrat",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "MSR",
+    "TwoLetterISOCode": "MS"
   },
   {
     "Id": 226,
@@ -1358,8 +1358,8 @@
   {
     "Id": 227,
     "Name": "Niue",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "NIU",
+    "TwoLetterISOCode": "NU"
   },
   {
     "Id": 228,
@@ -1370,20 +1370,20 @@
   {
     "Id": 229,
     "Name": "Guinea-Bissau",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "GNB",
+    "TwoLetterISOCode": "GW"
   },
   {
     "Id": 230,
     "Name": "Cocos (Keeling) Islands",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "CCK",
+    "TwoLetterISOCode": "CC"
   },
   {
     "Id": 231,
     "Name": "Myanmar",
-    "ThreeLetterISOCode": null,
-    "TwoLetterISOCode": null
+    "ThreeLetterISOCode": "MMR",
+    "TwoLetterISOCode": "MM"
   },
   {
     "Id": 232,

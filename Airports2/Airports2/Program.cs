@@ -12,7 +12,7 @@ namespace Airports
             Console.WriteLine("Hello World!");
             AirportContext context;
             IDataLoader loader = new DataLoader();
-            if (!loader.AreDataAvailable())
+            if (!loader.AreDataAvailable)
             {
                 context = loader.LoadData();
             }

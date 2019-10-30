@@ -17,7 +17,7 @@ namespace Airports.Logic.Services
     {
         readonly Logger logger;
         AirportContext context;
-        FileManager fileManager;
+        IFileManager fileManager;
 
         static IDictionary<UniqueCity, City> cities; // it is necessary, because there are more cities in different countries, which have the same name
 

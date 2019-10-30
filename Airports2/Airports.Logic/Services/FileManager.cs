@@ -1,4 +1,5 @@
 ﻿using Airports.Logic.Models;
+using Airports.Logic.Services.Interfaces;
 using Newtonsoft.Json;
 using NLog;
 using System;
@@ -8,7 +9,7 @@ using System.Text;
 
 namespace Airports.Logic.Services
 {
-    public class FileManager
+    public class FileManager : IFileManager
     {
         readonly Logger logger;
         const string InputFolderPath = @"..\\..\\..\\..\\Data\";
@@ -26,7 +27,7 @@ namespace Airports.Logic.Services
             logger = LogManager.GetCurrentClassLogger();
         }
 
-        public List<T> Deserialize<T>(string fileName) where T : class
+        public ICollection<T> Deserialize<T>(string fileName) where T : class
         {
             return JsonConvert.DeserializeObject<List<T>>(File.ReadAllText(InputFolderPath + OutputFolderPath + fileName));
         }

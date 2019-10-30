@@ -13,10 +13,10 @@ namespace Airports.Logic.Services
     {
         public static IEnumerable<T> Parse<T>(string source) where T : class
         {
+            var fileManager = new FileManager();
             List<T> retVal = new List<T>();
 
-            using (var fr = new FileStream(source, FileMode.Open))
-            using (var sr = new StreamReader(fr))
+            using (var sr = fileManager.GetStreamForRead(source))
             {
                 string line;
                 bool firstRow = true;

@@ -220,7 +220,7 @@ namespace Airports.Logic.Services
             return city;
         }
 
-        public void LoadTimeZoneNames()
+        private void LoadTimeZoneNames()
         {
             foreach (var zone in context.TimeZones)
             {
@@ -234,7 +234,7 @@ namespace Airports.Logic.Services
             }
         }
 
-        public void FindISOCodes()
+        private void FindISOCodes()
         {
             foreach (var airport in context.Airports)
             {
